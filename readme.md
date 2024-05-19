@@ -34,7 +34,7 @@ fitlog init
 
 step2: Run
 
-```python
+```bash
 python my_train.py
 ```
 
@@ -47,7 +47,7 @@ python my_train.py
 
 Some OS might not be able to use fitlog, please use the parameter
 
-```python
+```bash
 python my_train.py --if_fitlog -1
 ```
 
