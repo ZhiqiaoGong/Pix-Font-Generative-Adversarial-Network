@@ -1,6 +1,4 @@
-[TOC]
-
- 
+### Running Approach
 
 **Approach 1 (Recommended): Use jupyter notebook**
 
@@ -12,7 +10,7 @@ We have placed the parameters of 6 typical models obtained from the experiment i
 
 
 
-**Approach 2**
+**Approach 2:**
 
  
 
@@ -20,35 +18,28 @@ step1: Set up the environment. On top of existing PyTorch, you will also need to
 
  
 
-\```bash
-
-\#Print progress bar
+```bash
+#Print progress bar
 
 pip install progressbar2 
 
-\#Used for logging
+#Used for logging
 
 pip install fitlog 
 
 fitlog init
-
-\```
+```
 
  
 
 step2: Run
 
-\```
-
+```python
 python my_train.py
+```
 
-\```
 
- 
 
- 
-
- 
 
 **Possible Issues**
 
@@ -56,11 +47,9 @@ python my_train.py
 
 Some OS might not be able to use fitlog, please use the parameter
 
-\```
-
+```python
 python my_train.py --if_fitlog -1
-
-\```
+```
 
  
 
@@ -74,13 +63,10 @@ We have placed the generated images in *./output/*, and named the folders accord
 
 Additionally, execute
 
-\```
-
+```bash
 fitlog log logs
+```
 
-\```
-
- 
 
 Fitlog will occupy a network interface on your machine (default is 5000), then you can access all your previous running logs through this interface, as shown in the image below:
 
@@ -106,11 +92,9 @@ Valid model names **must include** one of the following characters:
 
  
 
-\```python
-
+```python
 valid_model_name = ['AutoEncoderGen', 'UNetGen', 'ResGen', 'UResGen', 'GAN', 'pic2pic', 'ResGAN', 'UResGAN']
-
-\```
+```
 
  
 
@@ -124,8 +108,7 @@ We have also printed the model architecture in *output/<model_name>/<opt>/<model
 
 Input: `python my_train.py -h`
 
-\```
-
+```bash
 usage: my_train.py [-h] [--model_mode MODEL_MODE] [--model_name MODEL_NAME] [--dropout DROPOUT] [--channels CHANNELS]
 
 ​          [--n_block N_BLOCK] [--ad_res AD_RES] [--n_downsampling N_DOWNSAMPLING] [--crop_weight CROP_WEIGHT]     
@@ -258,4 +241,5 @@ optional arguments:
 
 ​            Dataset length, needed to calculate steps
 
- --if_save IF_SAVE   Whether to store the model 1 means store all;-1 means only store the last model;0 means do not store```
+ --if_save IF_SAVE   Whether to store the model 1 means store all;-1 means only store the last model;0 means do not store
+```
