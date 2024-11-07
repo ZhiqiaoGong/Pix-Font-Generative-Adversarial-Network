@@ -1,8 +1,21 @@
+## Best Results:
+
+| Original AutoEncoder | Best AutoEncoder |
+|:--------------------:|:-----------------:|
+| ![Original AutoEncoder Test](OriginalAutoEncoder_test.gif) | ![BestSingleGenerator Test](BestSingleGenerator_test.gif) |
+
+| Original pix2pix | Best pix2pix |
+|:----------------:|:------------:|
+| ![Original pix2pix Test](Originalpix2pix_test.gif) | ![Best pix2pix Test](Bestpix2pix_test.gif) |
+
+| Original GAN | Best GAN |
+|:------------:|:--------:|
+| ![Original GAN Test](OriginalGAN_test.gif) | ![Best GAN Test](BestGAN_test.gif) |
+
+
 ## Running Approach
 
 **Approach 1 (Recommended): Use jupyter notebook**
-
- 
 
 Open with notebook: mldesign.ipynb.
 
@@ -243,23 +256,3 @@ optional arguments:
 
  --if_save IF_SAVE   Whether to store the model 1 means store all;-1 means only store the last model;0 means do not store
 ```
-
-## Best Results:
-### Original AutoEncoder
-![Original AutoEncoder Test](OriginalAutoEncoder_test.gif)
-
-### Original pix2pix
-![Original pix2pix Test](Originalpix2pix_test.gif)
-
-### Original GAN
-![Original GAN Test](OriginalGAN_test.gif)
-
-### Best Single Generator
-![Best Single Generator Test](BestSingleGenerator_test.gif)
-
-### Best pix2pix
-![Best pix2pix Test](Bestpix2pix_test.gif)
-
-### Best GAN Test
-![Best GAN Test](BestGAN_test.gif)
-
