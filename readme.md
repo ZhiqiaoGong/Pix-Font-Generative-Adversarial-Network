@@ -243,3 +243,11 @@ optional arguments:
 
  --if_save IF_SAVE   Whether to store the model 1 means store all;-1 means only store the last model;0 means do not store
 ```
+
+### Best Results:
+![Original AutoEncoder Test](OriginalAutoEncoder_test.gif)
+![Original pix2pix Test](Originalpix2pix_test.gif)
+![Original GAN Test](OriginalGAN_test.gif)
+![Best Single Generator Test](BestSingleGenerator_test.gif)
+![Best pix2pix Test](Bestpix2pix_test.gif)
+![Best GAN Test](BestGAN_test.gif)
